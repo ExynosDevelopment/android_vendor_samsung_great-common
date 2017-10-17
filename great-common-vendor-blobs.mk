@@ -1,6 +1,7 @@
 # Sascha Nesterovic
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/great-common/proprietary/vendor/firmware/SoundBoosterParam.bin:system/vendor/firmware/SoundBoosterParam.bin \
     vendor/samsung/great-common/proprietary/app/FFFFFFFF000000000000000000000001.drbin:system/app/FFFFFFFF000000000000000000000001.drbin \
     vendor/samsung/great-common/proprietary/app/mcRegistry/00060308060501020000000000000000.tlbin:system/app/mcRegistry/00060308060501020000000000000000.tlbin \
     vendor/samsung/great-common/proprietary/app/mcRegistry/0706000000000000000000000000004d.tlbin:system/app/mcRegistry/0706000000000000000000000000004d.tlbin \
