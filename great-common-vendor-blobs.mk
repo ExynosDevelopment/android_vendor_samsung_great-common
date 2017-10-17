@@ -96,8 +96,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/great-common/proprietary/etc/nfc/SGP/sec_s3nrn82_rfreg.bin:system/etc/nfc/SGP/sec_s3nrn82_rfreg.bin \
     vendor/samsung/great-common/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf \
     vendor/samsung/great-common/proprietary/etc/wifi/bcmdhd_clm.blob:system/etc/wifi/bcmdhd_clm.blob \
+    vendor/samsung/great-common/proprietary/etc/wifi/bcmdhd_sta.bin_b0:system/etc/wifi/bcmdhd_sta.bin_b0 \
     vendor/samsung/great-common/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
     vendor/samsung/great-common/proprietary/etc/wifi/bcmdhd_mfg.bin_a0:system/etc/wifi/bcmdhd_mfg.bin_a0 \
+    vendor/samsung/great-common/proprietary/etc/wifi/bcmdhd_mfg.bin_b0:system/etc/wifi/bcmdhd_mfg.bin_b0 \
     vendor/samsung/great-common/proprietary/etc/wifi/bcmdhd_mfg.bin_a0_ePA:system/etc/wifi/bcmdhd_mfg.bin_a0_ePA \
     vendor/samsung/great-common/proprietary/etc/wifi/bcmdhd_mfg.bin_a1:system/etc/wifi/bcmdhd_mfg.bin_a1 \
     vendor/samsung/great-common/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
@@ -163,7 +165,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/great-common/proprietary/lib/libexynosv4l2.so:system/lib/libexynosv4l2.so \
     vendor/samsung/great-common/proprietary/lib/libfloatingfeature.so:system/lib/libfloatingfeature.so \
     vendor/samsung/great-common/proprietary/lib/libhiddensound.so:system/lib/libhiddensound.so \
-    vendor/samsung/great-common/proprietary/lib/libHMT.so:system/proprietary/lib/libHMT.so \
+    vendor/samsung/great-common/proprietary/lib/libHMT.so:system/lib/libHMT.so \
     vendor/samsung/great-common/proprietary/lib/libion.so:system/lib/libion.so \
     vendor/samsung/great-common/proprietary/lib/libjackshm.so:system/lib/libjackshm.so \
     vendor/samsung/great-common/proprietary/lib/libjansson.so:system/lib/libjansson.so \
@@ -246,6 +248,24 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/great-common/proprietary/lib/hw/vibrator.default.so:system/lib/hw/vibrator.default.so \
     vendor/samsung/great-common/proprietary/lib/hw/vibrator.goldfish.so:system/lib/hw/vibrator.goldfish.so \
     vendor/samsung/great-common/proprietary/lib/hw/vr.default.so:system/lib/hw/vr.default.so \
+    vendor/samsung/great-common/proprietary/vendor/lib/libavcodec.so:system/vendor/lib/libavcodec.so \
+    vendor/samsung/great-common/proprietary/vendor/lib/libavformat.so:system/lib/libavformat.so \
+    vendor/samsung/great-common/proprietary/vendor/lib/libavutil.so:system/vendor/lib/libavutil.so \
+    vendor/samsung/great-common/proprietary/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so \
+    vendor/samsung/great-common/proprietary/vendor/lib/libffmpeg_extractor.so:system/vendor/lib/libffmpeg_extractor.so \
+    vendor/samsung/great-common/proprietary/vendor/lib/libffmpeg_utils.so:system/vendor/lib/libffmpeg_utils.so \
+    vendor/samsung/great-common/proprietary/vendor/lib/libswresample.so:system/vendor/lib/libswresample.so \
+    vendor/samsung/great-common/proprietary/vendor/lib/libswscale.so:system/vendor/lib/libswscale.so \
+        vendor/samsung/great-common/proprietary/vendor/lib64/libavcodec.so:system/vendor/lib64/libavcodec.so \
+    vendor/samsung/great-common/proprietary/vendor/lib64/libavformat.so:system/lib64/libavformat.so \
+    vendor/samsung/great-common/proprietary/vendor/lib64/libavutil.so:system/vendor/lib64/libavutil.so \
+    vendor/samsung/great-common/proprietary/vendor/lib64/libbt-vendor.so:system/vendor/lib64/libbt-vendor.so \
+    vendor/samsung/great-common/proprietary/vendor/lib64/libffmpeg_extractor.so:system/vendor/lib64/libffmpeg_extractor.so \
+    vendor/samsung/great-common/proprietary/vendor/lib64/libffmpeg_utils.so:system/vendor/lib64/libffmpeg_utils.so \
+    vendor/samsung/great-common/proprietary/vendor/lib64/libswresample.so:system/vendor/lib64/libswresample.so \
+    vendor/samsung/great-common/proprietary/vendor/lib64/libswscale.so:system/vendor/lib64/libswscale.so \
+    vendor/samsung/great-common/proprietary/vendor/lib/libffmpeg_omx.so:system/vendor/lib/libffmpeg_omx.so \
+    vendor/samsung/great-common/proprietary/vendor/lib64/libffmpeg_omx.so:system/vendor/lib64/libffmpeg_omx.so \
     vendor/samsung/great-common/proprietary/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
     vendor/samsung/great-common/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
     vendor/samsung/great-common/proprietary/lib/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib/omx/libOMX.Exynos.HEVC.Decoder.so \
@@ -262,12 +282,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/great-common/proprietary/lib/soundfx/libaudiopreprocessing.so:system/lib/soundfx/libaudiopreprocessing.so \
     vendor/samsung/great-common/proprietary/lib/soundfx/libbundlewrapper.so:system/lib/soundfx/libbundlewrapper.so \
     vendor/samsung/great-common/proprietary/lib/soundfx/libdownmix.so:system/lib/soundfx/libdownmix.so \
+    vendor/samsung/great-common/proprietary/lib64/soundfx/libdownmix.so:system/lib64/soundfx/libdownmix.so \
     vendor/samsung/great-common/proprietary/lib/soundfx/libeffectproxy.so:system/lib/soundfx/libeffectproxy.so \
+    vendor/samsung/great-common/proprietary/lib64/soundfx/libeffectproxy.so:system/lib64/soundfx/libeffectproxy.so \
     vendor/samsung/great-common/proprietary/lib/soundfx/libgearvr.so:system/lib/soundfx/libgearvr.so \
     vendor/samsung/great-common/proprietary/lib/soundfx/libldnhncr.so:system/lib/soundfx/libldnhncr.so \
+    vendor/samsung/great-common/proprietary/lib64/soundfx/libldnhncr.so:system/lib64/soundfx/libldnhncr.so \
     vendor/samsung/great-common/proprietary/lib/soundfx/libmyspace.so:system/lib/soundfx/libmyspace.so \
     vendor/samsung/great-common/proprietary/lib/soundfx/libreverbwrapper.so:system/lib/soundfx/libreverbwrapper.so \
+    vendor/samsung/great-common/proprietary/lib64/soundfx/libreverbwrapper.so:system/lib64/soundfx/libreverbwrapper.so \
     vendor/samsung/great-common/proprietary/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
+    vendor/samsung/great-common/proprietary/lib64/soundfx/libvisualizer.so:system/lib64/soundfx/libvisualizer.so \
     vendor/samsung/great-common/proprietary/lib64/libacryl.so:system/lib64/libacryl.so \
     vendor/samsung/great-common/proprietary/lib64/libaudiopolicyenginedefault.so:system/lib64/libaudiopolicyenginedefault.so \
     vendor/samsung/great-common/proprietary/lib64/libaudiopolicymanagerdefault.so:system/lib64/libaudiopolicymanagerdefault.so \
@@ -301,6 +326,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/great-common/proprietary/lib64/librilutils.so:system/lib64/librilutils.so \
     vendor/samsung/great-common/proprietary/lib64/libsecaudioinfo.so:system/lib64/libsecaudioinfo.so \
     vendor/samsung/great-common/proprietary/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so \
+    vendor/samsung/great-common/proprietary/lib64/soundfx/libaudiopreprocessing.so:system/lib64/soundfx/libaudiopreprocessing.so \
+    vendor/samsung/great-common/proprietary/lib64/soundfx/libbundlewrapper.so:system/lib64/soundfx/libbundlewrapper.so \
     vendor/samsung/great-common/proprietary/lib64/libsecril-client.so:system/lib64/libsecril-client.so \
     vendor/samsung/great-common/proprietary/lib64/libsec-ril-dsds.so:system/lib64/libsec-ril-dsds.so \
     vendor/samsung/great-common/proprietary/lib64/libsec-ril.so:system/lib64/libsec-ril.so \
@@ -378,18 +405,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/great-common/proprietary/lib64/omx/libOMX.Exynos.VP9.Decoder.so:system/lib64/omx/libOMX.Exynos.VP9.Decoder.so \
     vendor/samsung/great-common/proprietary/lib64/omx/libOMX.Exynos.VP9.Encoder.so:system/lib64/omx/libOMX.Exynos.VP9.Encoder.so \
     vendor/samsung/great-common/proprietary/lib64/omx/libOMX.Exynos.WMV.Decoder.so:system/lib64/omx/libOMX.Exynos.WMV.Decoder.so \
-    vendor/samsung/great-common/proprietary/vendor/etc/air_engines.xml:system/vendor/etc/air_engines.xml \
     vendor/samsung/great-common/proprietary/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     vendor/samsung/great-common/proprietary/vendor/etc/audio_policy.conf:system/vendor/etc/audio_policy.conf \
-    vendor/samsung/great-common/proprietary/vendor/etc/public.libraries.txt:system/vendor/etc/public.libraries.txt \
     vendor/samsung/great-common/proprietary/vendor/firmware/AP_AUDIO_SLSI.bin:system/vendor/firmware/AP_AUDIO_SLSI.bin \
     vendor/samsung/great-common/proprietary/vendor/firmware/APBargeIn_AUDIO_SLSI.bin:system/vendor/firmware/APBargeIn_AUDIO_SLSI.bin \
     vendor/samsung/great-common/proprietary/vendor/firmware/APBiBF_AUDIO_SLSI.bin:system/vendor/firmware/APBiBF_AUDIO_SLSI.bin \
-    vendor/samsung/great-common/proprietary/vendor/firmware/bcm4361A0_V0128.0000.hcd:system/vendor/firmware/bcm4361A0_V0128.0000.hcd \
-    vendor/samsung/great-common/proprietary/vendor/firmware/bcm4361B0_V0235.0245_murata_es1.hcd:system/vendor/firmware/bcm4361B0_V0235.0245_murata_es1.hcd \
-    vendor/samsung/great-common/proprietary/vendor/firmware/bcm4361B0_V0235.0245_murata.hcd:system/vendor/firmware/bcm4361B0_V0235.0245_murata.hcd \
-    vendor/samsung/great-common/proprietary/vendor/firmware/bcm4361B0_V0235.0246_semco_e31.hcd:system/vendor/firmware/bcm4361B0_V0235.0246_semco_e31.hcd \
-    vendor/samsung/great-common/proprietary/vendor/firmware/bcm4361B0_V0235.0247_semco.hcd:system/vendor/firmware/bcm4361B0_V0235.0247_semco.hcd \
     vendor/samsung/great-common/proprietary/vendor/firmware/bcm4361B0_V0254.0262_murata.hcd:system/vendor/firmware/bcm4361B0_V0254.0262_murata.hcd \
     vendor/samsung/great-common/proprietary/vendor/firmware/bcm4361B0_V0254.0263_semco.hcd:system/vendor/firmware/bcm4361B0_V0254.0263_semco.hcd \
     vendor/samsung/great-common/proprietary/vendor/firmware/calliope_dram.bin:system/vendor/firmware/calliope_dram.bin \
@@ -423,7 +443,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/great-common/proprietary/vendor/firmware/setfile_3m3.bin:system/vendor/firmware/setfile_3m3.bin \
     vendor/samsung/great-common/proprietary/vendor/firmware/setfile_imx320.bin:system/vendor/firmware/setfile_imx320.bin \
     vendor/samsung/great-common/proprietary/vendor/firmware/setfile_imx333.bin:system/vendor/firmware/setfile_imx333.bin \
-    vendor/samsung/great-common/proprietary/vendor/firmware/SoundBoosterParam.bin:system/vendor/firmware/SoundBoosterParam.bin \
     vendor/samsung/great-common/proprietary/vendor/firmware/vts.bin:system/vendor/firmware/vts.bin \
     vendor/samsung/great-common/proprietary/vendor/firmware/nfc/sec_s3nrn82_firmware.bin:system/vendor/firmware/nfc/sec_s3nrn82_firmware.bin \
     vendor/samsung/great-common/proprietary/vendor/lib/hwcomposer.exynos5.so:system/vendor/lib/hwcomposer.exynos5.so \
@@ -433,18 +452,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/great-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/samsung/great-common/proprietary/vendor/lib/libOpenCv.so:system/vendor/lib/libOpenCv.so \
     vendor/samsung/great-common/proprietary/vendor/lib/libtlc_comm.so:system/vendor/lib/libtlc_comm.so \
-    vendor/samsung/great-common/proprietary/vendor/lib/libtlc_tz_ccm.so:system/vendor/lib/libtlc_tz_ccm.so \
     vendor/samsung/great-common/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
     vendor/samsung/great-common/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/samsung/great-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/samsung/great-common/proprietary/vendor/lib64/gralloc.exynos5.so:system/vendor/lib64/gralloc.exynos5.so \
-    vendor/samsung/great-common/proprietary/vendor/lib64/hwcomposer.exynos5.so:system/vendor/lib64/hwcomposer.exynos5.so \
     vendor/samsung/great-common/proprietary/vendor/lib64/libjack.so:system/vendor/lib64/libjack.so \
     vendor/samsung/great-common/proprietary/vendor/lib64/libMcClient.so:system/vendor/lib64/libMcClient.so \
     vendor/samsung/great-common/proprietary/vendor/lib64/libMcRegistry.so:system/vendor/lib64/libMcRegistry.so \
     vendor/samsung/great-common/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
     vendor/samsung/great-common/proprietary/vendor/lib64/libOpenCv.so:system/vendor/lib64/libOpenCv.so \
     vendor/samsung/great-common/proprietary/vendor/lib64/libtlc_comm.so:system/vendor/lib64/libtlc_comm.so \
-    vendor/samsung/great-common/proprietary/vendor/lib64/libtlc_tz_ccm.so:system/vendor/lib64/libtlc_tz_ccm.so \
-    vendor/samsung/great-common/proprietary/vendor/lib64/egl/libGLES_mali.so:system/vendor/lib647egl/libGLES_mali.so \
+    vendor/samsung/great-common/proprietary/vendor/lib64/egl/libGLES_mali.so:system/vendor/lib64/egl/libGLES_mali.so \
     vendor/samsung/great-common/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so
